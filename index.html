@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="flex flex-col min-h-screen bg-yellow-100">
+    <header class="p-4 bg-pink-200">
+        <div class="container flex items-center justify-between mx-auto">
+            <div class="flex items-center flex-1">
+                <input type="text" placeholder="Barra de pesquisa" class="w-full p-2 rounded-lg">
+            </div>
+            <div class="flex items-center space-x-4">
+                <button aria-label="Acessibilidade" class="text-blue-500 hover:text-blue-700">
+                    <i class="fas fa-universal-access"></i>
+                </button>
+                <button aria-label="Perfil" class="text-blue-500 hover:text-blue-700">
+                    <i class="fas fa-user"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container flex-grow p-4 mx-auto">
+        <section class="mb-8">
+            <div class="flex items-center justify-between p-6 bg-pink-300 rounded-lg">
+                <div class="flex-1">
+                    <h2 class="mb-2 text-2xl font-bold">Título</h2>
+                    <p class="mb-4">Descrição</p>
+                    <button class="px-4 py-2 font-bold text-white bg-blue-300 rounded hover:bg-blue-400">
+                        Botão
+                    </button>
+                </div>
+                <div class="w-1/2">
+                    <img src="https://via.placeholder.com/500x300" alt="Banner" class="w-full h-auto rounded-lg">
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h3 class="mb-4 text-xl font-bold">Nome da seção</h3>
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+                <div class="overflow-hidden bg-white rounded-lg shadow-md">
+                    <img src="https://via.placeholder.com/300x200" alt="Banner" class="object-cover w-full h-40">
+                    <div class="p-4">
+                        <p class="text-sm">Infos</p>
+                    </div>
+                </div>
+                <div class="overflow-hidden bg-white rounded-lg shadow-md">
+                    <img src="https://via.placeholder.com/300x200" alt="Banner" class="object-cover w-full h-40">
+                    <div class="p-4">
+                        <p class="text-sm">Infos</p>
+                    </div>
+                </div>
+                <div class="overflow-hidden bg-white rounded-lg shadow-md">
+                    <img src="https://via.placeholder.com/300x200" alt="Banner" class="object-cover w-full h-40">
+                    <div class="p-4">
+                        <p class="text-sm">Infos</p>
+                    </div>
+                </div>
+                <div class="overflow-hidden bg-white rounded-lg shadow-md">
+                    <img src="https://via.placeholder.com/300x200" alt="Banner" class="object-cover w-full h-40">
+                    <div class="p-4">
+                        <p class="text-sm">Infos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h3 class="mb-4 text-xl font-bold">Nome da seção</h3>
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+                <div class="overflow-hidden bg-white rounded-lg shadow-md">
+                    <img src="https://via.placeholder.com/300x200" alt="Banner" class="object-cover w-full h-40">
+                    <div class="p-4">
+                        <p class="text-sm">Infos</p>
+                    </div>
+                </div>
+                <div class="overflow-hidden bg-white rounded-lg shadow-md">
+                    <img src="https://via.placeholder.com/300x200" alt="Banner" class="object-cover w-full h-40">
+                    <div class="p-4">
+                        <p class="text-sm">Infos</p>
+                    </div>
+                </div>
+                <div class="overflow-hidden bg-white rounded-lg shadow-md">
+                    <img src="https://via.placeholder.com/300x200" alt="Banner" class="object-cover w-full h-40">
+                    <div class="p-4">
+                        <p class="text-sm">Infos</p>
+                    </div>
+                </div>
+                <div class="overflow-hidden bg-white rounded-lg shadow-md">
+                    <img src="https://via.placeholder.com/300x200" alt="Banner" class="object-cover w-full h-40">
+                    <div class="p-4">
+                        <p class="text-sm">Infos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="p-4 bg-pink-200">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Eventos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <div id="eventModal" class="fixed inset-0 hidden w-full h-full overflow-y-auto bg-gray-600 bg-opacity-50">
+        <div class="relative w-11/12 p-5 mx-auto bg-white border rounded-md shadow-lg top-20 md:w-3/4 lg:w-1/2">
+            <div class="mt-3 text-center">
+                <img src="https://via.placeholder.com/800x400" alt="Banner" class="object-cover w-full h-64 mb-4 rounded-lg">
+                <h3 class="mb-2 text-2xl font-bold">Título legal</h3>
+                <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center">
+                        <span class="mr-2 text-gray-600">Nome da empresa</span>
+                        <div class="flex">
+                            <i class="text-yellow-400 fas fa-star"></i>
+                            <i class="text-yellow-400 fas fa-star"></i>
+                            <i class="text-yellow-400 fas fa-star"></i>
+                            <i class="text-yellow-400 fas fa-star"></i>
+                            <i class="text-yellow-400 fas fa-star"></i>
+                        </div>
+                    </div>
+                    <button class="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700">
+                        Visitar
+                    </button>
+                </div>
+                <p class="mb-2 text-lg">Data e hora</p>
+                <p class="mb-4 text-gray-600">Texto informativo</p>
+                <p class="mb-2 text-lg">Local do evento mais o mapa</p>
+                <p class="mb-4 text-gray-600">Texto informativo mais o link ou o mapa (aberto para revisão)</p>
+                <p class="mb-2 text-lg">Sobre o evento</p>
+                <p class="mb-4 text-gray-600">Texto informativo</p>
+                <div class="flex items-center justify-between">
+                    <button class="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700">
+                        Denunciar ou avaliar evento
+                    </button>
+                    <div>
+                        <span class="mr-2 text-gray-600">Disponibilidade/preço</span>
+                        <button class="px-4 py-2 font-bold text-white bg-green-500 rounded hover:bg-green-700">
+                            Botão
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.bg-white').forEach(item => {
+            item.addEventListener('click', () => {
+                document.getElementById('eventModal').classList.remove('hidden');
+            });
+        });
+
+        document.getElementById('eventModal').addEventListener('click', (e) => {
+            if (e.target === document.getElementById('eventModal')) {
+                document.getElementById('eventModal').classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
